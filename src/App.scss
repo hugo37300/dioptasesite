@@ -1,0 +1,329 @@
+@font-face {
+  font-family: 'CandleLight';
+  src: local('CandleLight'), url("./fonts/ttf/CandleLight.ttf") format('truetype');
+}
+
+html{
+  width: 100%;
+  height: 100%;
+
+  body{
+    width: 100%;
+    height: 100%;
+  }
+
+  div{
+    width: 100%;
+  }
+
+  nav{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+  }
+
+  p { font-size: 20px; }
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.sequence-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.scroll-sequence {
+  position: absolute;
+  height: 1000vh;
+  width: 100%;
+  top: 0;
+}
+
+.image-sequence {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  margin-top: 5%;
+}
+
+.canvas-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10%;
+}
+
+.canvas-wrapper {
+  .wrapper-0{
+    transition: all 0.3s;
+    will-change: transform;
+  }
+  .wrapper-1{
+    transition: all 0.3s;
+    will-change: transform;
+  }
+}
+
+span.note {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-top: 24px;
+}
+
+//Header
+.menu-header{
+  height: 8%;
+  .header{
+    z-index: 10000;
+    width: 100%;
+    height: 8%;
+    background-color: #023954;
+    font-size: 20px;
+    position: fixed;
+
+    div{
+      height: 100%;
+    }
+    .menu-header{
+      z-index: 10000;
+      text-align: center;
+
+      .navbar-nav{
+        width: 100%;
+
+        .logo-header{
+          width: 30%;
+          text-align: left;
+
+          svg{
+            margin-left: 10%;
+          }
+        }
+
+        .nav-item{
+          width: 9.5%;
+
+          a{
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+//body
+.container-fluid{
+  height: 90%;
+  padding: 0!important;
+
+  .earth-homepage{
+    height: fit-content;
+    display: flex;
+    margin: 10vh auto;
+    img{
+      height: 25vh;
+      margin-top: 5%;
+    }
+    .svg-text{
+      margin-left: 10vh;
+      font-size: 12px;
+      svg{
+        margin-left: 4ch;
+        padding-bottom: 4ch;
+      }
+    }
+  }
+
+  .svg-logo{
+    width: 15%;
+    margin-left: 42.5%;
+    height: fit-content;
+    padding-bottom: 5vh;
+    padding-top: 20%;
+  }
+
+  #v0 {
+    width: 50%;
+    margin-left: 25%;
+    &-import{
+      width: 50%;
+    }
+    &-sites{
+      width: 50%;
+    }
+  }
+
+  #set-height {
+    position: absolute;
+
+    &-import {
+      position: absolute;
+    }
+
+    &-sites{
+      position: absolute;
+    }
+  }
+
+  .content {
+    position: sticky;
+    position: -webkit-sticky;
+    width: 100%;
+    top: 33.3%;
+  }
+
+  h1 {
+    font-size: 3em;
+    background: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0;
+  }
+
+  .entered {
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+
+  @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  .import{
+    .svg-text{
+      width: 12.5%;
+      margin: 30vh 0 0 30vh;
+      text-align: right;
+
+      div{
+        margin: 50% 0;
+      }
+
+      h3{
+        margin: 2ch 0 1ch 0;
+      }
+    }
+  }
+
+  .sites{
+    margin-top: 80vh;
+    .svg-text{
+      width: 12.5%;
+      text-align: left;
+      margin-left: 70%;
+
+      div{
+        margin: 50% 0;
+      }
+
+      h3{
+        margin: 1ch 0 1ch 0;
+      }
+    }
+  }
+
+  #tablette-image{
+    text-align-last: center;
+    margin-top: 35vh;
+  }
+
+  .tablette{
+    margin-top: 80vh;
+    .svg-text{
+      width: 12.5%;
+      text-align: right;
+      margin-left: 20vh;
+
+      div{
+        margin: 50% 0;
+      }
+
+      h3{
+        margin: 2ch 0 1ch 0;
+      }
+    }
+  }
+
+  .pdi{
+    margin-top: 40vh;
+    margin-left: 40vh;
+    .svg-text{
+      text-align: center;
+
+      h3{
+        display: inline-block;
+        vertical-align: bottom;
+      }
+    }
+  }
+}
+
+#canvas0{
+  background: center url("./_resources/laptop/laptop_00000.png");
+  background-size: 100%;
+  z-index: 0;
+  margin-top: 100px;
+}
+#canvas1{
+  background-size: 100%;
+  z-index: 0;
+  margin-left: 600px;
+}
+#canvas2{
+  background-size: 100%;
+  z-index: 0;
+  margin-left: -20vh;
+}
+#canvas3{
+  background-size: 100%;
+  z-index: 0;
+  margin-left: 35vh;
+}
+
+#section1{
+  position: relative;
+  background: transparent;
+  margin-top: 130vh;
+}

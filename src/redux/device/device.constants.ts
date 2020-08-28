@@ -1,0 +1,9 @@
+const deviceConstants = {
+    GET_ALL_REQUEST:'GETALL_DEVICE_REQUEST',
+    GET_ALL_SUCCESS:'GETALL_DEVICE_SUCCESS',
+    GET_ALL_FAILURE:'GETALL_DEVICE_FAILURE',
+
+    CLEAR: 'DEVICE_CLEAR',
+}
+
+export default deviceConstants
